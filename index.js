@@ -1,3 +1,4 @@
+// Player 1 Win
 var randomNumber1 = Math.floor(Math.random() * 6) + 1; //Random 1-6
 // output = randomNumber1;
 // console.log(output);
@@ -10,11 +11,15 @@ var image1 = document.querySelectorAll("img")[0];
 
 image1.setAttribute("src", randomImageSource);
 
+// Player 2 Win
+
 var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
 var randomImageSource2 = "./images/dice" + randomNumber2 + ".png";
 
 document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
+
+// Title Declaration
 
 if (randomNumber1 > randomNumber2) {
     document.querySelector("h1").innerHTML = "Player 1 Wins!";
